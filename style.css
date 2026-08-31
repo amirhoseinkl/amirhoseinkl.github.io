@@ -1,0 +1,14 @@
+body{
+      background-color: rgb(255, 228, 196);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 20%;
+      font-size: 30px;
+      color: rgb(255, 228, 196);
+      transition: all 0.5s;
+
+}
+.title, #color{
+      mix-blend-mode: difference;
+}
