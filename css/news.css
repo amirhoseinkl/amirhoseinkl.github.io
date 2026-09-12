@@ -1,0 +1,451 @@
+@font-face{
+    font-family: irsans;
+    src: url(../fonts/irsans_p30download.com.ttf)format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: "irsans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #101828;
+}
+header{
+position: relative;
+display: grid;
+align-items: center;
+justify-content: center;
+border:none;
+width: 100vw;
+margin: auto;
+height: 30rem;
+top: 0;left: 0;right: 0;
+background-image: url(../photos/header-courses.png);
+background-size: cover;
+
+}
+container{
+position: fixed;
+left: 50%;
+transform: translateX(-50%);
+top: 2rem;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: center;
+background-color: whitesmoke;
+width: 80rem;
+height: 5rem;
+border-radius: 2rem;
+box-shadow: black 0 0 3rem 0.1rem;
+gap: 6rem;
+z-index: 1;
+}
+.logo{
+    position: absolute;
+    right: 3rem;
+ 
+}
+container ul{
+flex-direction: row-reverse;
+position: absolute;
+
+width: auto;
+list-style: none;
+font-size: 1.2rem;
+display: flex;
+gap: 2rem;
+}
+container ul a{
+    font-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: medium;
+}
+container ul a:hover{
+    color: rgb(255, 182, 6);
+    transition: all ease 0.2s;
+}
+.color{
+    position: absolute;
+    left: 0;
+    border: 1px none;
+    width: 20%;
+    height: 100%;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 100;
+    border-radius: 2rem 0rem 0rem 2rem;
+    background-color: rgb(255, 182, 6);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   text-wrap: nowrap;
+}
+.title{
+    position: relative;
+    margin-top: 0rem;
+    margin-left: 0rem  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65rem;
+    height: 15rem;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    border-radius: 2rem;
+    animation: fadein 2s ease 0s forwards;
+    
+}
+@keyframes fadein {
+from {
+
+opacity: 0;
+
+transform: translateY(40px);
+
+}
+
+to {
+
+opacity: 1;
+
+transform: translateY(0);
+
+}
+}
+.title span{
+    cursor: default;
+    background-color: rgb(255, 182, 6);
+    padding: 0.8rem;
+    border-radius: 2rem;
+}
+
+
+/* mainnnnnnnnnn */
+main{
+    /* border: solid purple 5px; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    height: 70rem;
+}
+.news-box{
+    position: relative;
+    right: 0;
+    text-align: right;
+    width: 100%;
+    /* height: 50rem; */
+    
+}
+.news-right{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: right;
+}
+.news-right-card{
+    position: absolute;
+    right: 0;
+    height: 50rem;
+    width: 57.5%;
+    margin-top: 7rem;
+}
+.second{
+    top: 43rem;
+}
+.third{
+    top: 86rem;
+}
+.news-right img{
+    border-radius: 2rem;
+    width: 40rem;
+    height: 20rem;
+}
+.title-b{
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+    justify-content: right;
+    width: 40rem;
+    height: 7rem;
+    gap: 2rem;
+}
+.title-p-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 6rem;
+}
+.title-b-p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.title-b-description{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.date{
+    background-color: rgb(255, 182, 6);
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    border-radius: 15%;
+    
+
+}
+.date-day{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.date-mounth{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.caption{
+    color: rgb(223, 222, 222);
+    font-size: 1.2rem;
+    margin-top: 8rem;
+    line-height: 2rem;
+}
+.news-right-card button{
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(255, 182, 6);
+    border-radius: 15rem;
+    border: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.news-right-card button:hover{
+    width: 11rem;
+    height: 3.5rem;
+}
+
+/* news left */
+
+.news-left{
+    /* border: solid red 1px; */
+    width: 30rem;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    margin-left: rem;
+    gap: 4rem;
+}
+.archives{
+    /* border: solid red 1px; */
+    height: 17rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 7.5rem;
+
+}
+.splitt{
+    width: 30rem;
+    height: 1px;
+    background-color: rgb(255, 182, 6);
+}
+.archives p{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.archives a{
+    font-size: 1rem;
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    transition: all 0.5s;
+}
+.archives a:hover{
+    color: rgb(255, 182, 6);
+}
+
+/* news lef cards */
+
+.latest-news{
+    /* border: solid 2px red; */
+    width: 30rem;
+    height: 70rem;
+}
+.side-news-card-box{
+    /* border: solid 5px blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 30rem;
+    height: 20rem;
+
+}
+.side-news-card-box-p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: right;
+}
+.latest-news img{
+    width: 29.5rem;
+    height: 12rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+.side-news-card-title{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+.writter{
+    color: gray;
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    font-weight: 100
+}
+
+/* foooooooooooter */
+
+footer{
+    width: 100%;
+    height: 50rem;
+    background-color: #1a1a1a;
+    align-items:center;
+    justify-content: center;
+    margin-top: 70rem;
+}
+.footer-basket{
+margin: auto;
+width: 70rem;
+height: 43rem;
+margin-top: 4rem;
+display: grid;
+align-items: center;
+justify-content: center;
+gap: 3rem;
+}
+.line-d{
+    margin: auto;
+    width: 3.4rem;
+    height: 0.3rem;
+    border-radius: 15rem;
+    background-color: rgb(255, 182, 6);
+}
+.footer-title-div{
+    
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65rem;
+    height: 10rem;
+    color: white;
+}
+.footer-title-p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.footer-title-input-div{
+   
+    gap: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55rem;
+    height: 5rem;
+}
+.footer-input{
+    width: 25rem;
+    height: 3rem;
+    border-radius: 15rem 0 0 15rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.footer-input-btn{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0 15rem 15rem 0;
+    border: none;
+    background-color: rgb(255, 182, 6);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+.footer-split-a{
+    width: 100%;
+    height: 0.13rem;
+    background-color: rgb(85, 84, 84);
+}
+.footer-sections{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 69rem;
+    gap: 2rem;
+}
+.footer-section{
+height: 14rem;
+width: 15.75rem;
+text-align: right;
+display: grid;
+}
+.footer-section h1{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.footer-section p{
+  color: rgb(184, 184, 184) ;
+  line-height: 1.5rem;
+}
+.footer-section a{
+    text-decoration: none;
+    color: rgb(184, 184, 184) ;
+    transition: all ease 0.4s;
+}
+.footer-section a:hover{
+    color: rgb(255, 182, 6);
+}
